@@ -16,6 +16,6 @@
     },
     "minimum-stability": "dev",
     "require": {
-	"actuallymab/laravel-comment": "^0.4.0"
+	"faustbrian/laravel-commentable": "^3.1"
 }
 }
