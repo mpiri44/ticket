@@ -1,5 +1,5 @@
 {
-    "name": "meysam/ticket",
+    "name": "payamava/ticket",
     "description": "this is a package for managment tickets",
     "license": "MIT",
     "keywords": ["laravel","ticket"],
@@ -11,7 +11,7 @@
     ],
         "autoload" : {
         "psr-4":{
-            "meysam\\wallet\\" : "src"
+            "payamava\\wallet\\" : "src"
         }
     },
     "minimum-stability": "dev",
