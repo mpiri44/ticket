@@ -9,5 +9,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+	"actuallymab/laravel-comment": "^0.4.0"
+}
 }
