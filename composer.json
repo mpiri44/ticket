@@ -1,0 +1,13 @@
+{
+    "name": "meysam/ticket",
+    "description": "this is a package for managment tickets",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Meysam",
+            "email": "mpiri44@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
