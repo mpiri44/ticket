@@ -102,6 +102,16 @@ trait CanTicket
             'priority'      =>  $priority
         ]);
     }
+    /**
+     * @param $name
+     * @return mixed
+     */
+    public function newTicketCategory($name)
+    {
+        return TicketCategory::create([
+            'name'  =>  $name
+        ]);
+    }
 
 
 
