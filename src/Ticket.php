@@ -11,8 +11,6 @@ class Ticket extends Model
 
     use HasComments;
 
-    protected $mustBeApproved = true;
-
     protected $table = 'tickets';
 
     protected $fillable = ['id','user_id','ticket_id','category_id','title','message','priority','status'];
@@ -24,5 +22,14 @@ class Ticket extends Model
     {
         return $this->hasOne(TicketCategory::class,'id');
     }
+
+    /**
+     * @return mixed
+     */
+    public function getReplies()
+    {
+        return $this->comments();
+    }
 }
+
 

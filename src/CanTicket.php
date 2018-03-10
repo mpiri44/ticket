@@ -63,5 +63,48 @@ trait CanTicket
         return $ticket->update(['status'    =>  'Open']);
     }
 
+    /**
+     * @param $ticket
+     * @return int
+     */
+    public function deleteTicket($ticket)
+    {
+        return Ticket::destroy($ticket->id);
+    }
+
+    /**
+     * @param $ticket
+     * @param $reply
+     * @param $new_message
+     * @return mixed
+     */
+    public function updateReply($ticket,$reply,$new_message)
+    {
+        return $ticket->updateComment($reply->id,[
+            'body'  =>  $new_message
+        ]);
+    }
+
+    /**
+     * @param $ticket
+     * @param $ticketCategory
+     * @param $title
+     * @param $message
+     * @param $priority
+     * @return mixed
+     */
+    public function updateTicket($ticket,$ticketCategory,$title,$message,$priority)
+    {
+        return $ticket->update([
+            'category_id'   =>  $ticketCategory->id,
+            'title'         =>  $title,
+            'message'       =>  $message,
+            'priority'      =>  $priority
+        ]);
+    }
+
+
+
 
 }
+
