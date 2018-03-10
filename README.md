@@ -40,4 +40,12 @@ Change state to open
     $user->changeStateToOpen($ticket)
 ```
 
+Delete Ticket
+```
+    $user->deleteTicket($ticket)
+```
 
+Update Reply
+```
+    $user->updateReply($ticket,$reply,$new_message)
+```
