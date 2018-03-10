@@ -49,3 +49,13 @@ Update Reply
 ```
     $user->updateReply($ticket,$reply,$new_message)
 ```
+
+Update Ticket
+```
+    $user->updateTicket($ticket,$newCategory,$title,$message,$priority)
+```
+
+Get all Replies
+```
+    $user->getReplies()
+```
