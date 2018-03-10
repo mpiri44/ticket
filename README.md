@@ -26,3 +26,18 @@ Create new ticket
     $user->newTicket($ticketCategory,'title','body','priority');
 ```
 
+Reply to ticket
+```
+    $user->replyToTicket($ticket,'title','message')
+```
+
+Change state ticket to closed
+```
+    $user->changeStateToClosed($ticket)
+```
+Change state to open
+```
+    $user->changeStateToOpen($ticket)
+```
+
+
