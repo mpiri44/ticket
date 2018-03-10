@@ -12,19 +12,13 @@ Next, if using Laravel 5, include the service provider within your config/app.ph
 'providers' => [
     Payamava\Ticket\TicketServiceProvider::class,
 ];
+```
+##Usage
 
-## Usage
-
-
+create new ticket category
 
 ```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
+    $user->newTicketCategory('name of category')
 ```
 Give an example
 ```
