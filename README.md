@@ -12,6 +12,10 @@ Next, if using Laravel 5, include the service provider within your config/app.ph
 'providers' => [
     Payamava\Ticket\TicketServiceProvider::class,
 ];
+
+php artisan vendor:publish
+
+php artisan migrate
 ```
 ## Usage
 
