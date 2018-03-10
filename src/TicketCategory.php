@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Payamava\Ticket;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -18,3 +18,4 @@ class TicketCategory extends Model
         return $this->hasMany(Ticket::class,'category_id');
     }
 }
+
