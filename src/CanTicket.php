@@ -6,7 +6,7 @@
  * Time: 7:50 PM
  */
 
-namespace App;
+namespace Payamava\Ticket;
 
 
 trait CanTicket
@@ -36,9 +36,13 @@ trait CanTicket
      * @param $message
      * @return mixed
      */
-    public function replyToTicket($ticket,$message)
+    public function replyToTicket($ticket,$title,$message)
     {
-        return $this->comment($ticket,$message);
+        return $ticket->comment([
+            'title' =>  $title,
+            'body'  =>  $message
+        ],$this);
+
     }
 
     /**

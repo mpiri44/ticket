@@ -1,14 +1,15 @@
 <?php
 
-namespace App;
+namespace Payamava\Ticket;
 
-use Actuallymab\LaravelComment\Commentable;
+
+use BrianFaust\Commentable\Traits\HasComments;
 use Illuminate\Database\Eloquent\Model;
 
 class Ticket extends Model
 {
 
-    use Commentable;
+    use HasComments;
 
     protected $mustBeApproved = true;
 
@@ -24,3 +25,4 @@ class Ticket extends Model
         return $this->hasOne(TicketCategory::class,'id');
     }
 }
+
